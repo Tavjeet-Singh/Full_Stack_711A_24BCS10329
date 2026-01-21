@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JobFinder</title>
+
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #2d6cdf;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #ffffff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #2d6cdf;
+            margin: 10px;
+            font-weight: bold;
+        }
+
+        section {
+            background-color: white;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        h2 {
+            color: #2d6cdf;
+        }
+
+        input {
+            padding: 8px;
+            width: 250px;
+            margin-top: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #2d6cdf;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        .job-card {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-bottom: 15px;
+            background-color: #fafafa;
+        }
+
+        button {
+            background-color: green;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #2d6cdf;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>JobFinder</h1>
+        <p>Your trusted job search platform</p>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Jobs</a>
+        <a href="#">Companies</a>
+        <a href="#">Post Resume</a>
+        <a href="#">Login</a>
+    </nav>
+
+    <section>
+        <h2>Find your dream job</h2>
+        <p>Search thousands of jobs from top companies</p>
+
+        <form>
+            <p>
+                What<br>
+                <input type="text" placeholder="Job title or keyword">
+            </p>
+
+            <p>
+                Where<br>
+                <input type="text" placeholder="City or location">
+            </p>
+
+            <input type="submit" value="Search Jobs">
+        </form>
+    </section>
+
+    <section>
+        <h2>Popular Job Categories</h2>
+        <ul>
+            <li>IT & Software</li>
+            <li>Marketing & Sales</li>
+            <li>Finance & Accounting</li>
+            <li>Human Resources</li>
+            <li>Healthcare</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Featured Job Openings</h2>
+
+        <div class="job-card">
+            <h3>Software Engineer</h3>
+            <p>Company: TechNova Solutions</p>
+            <p>Location: Bengaluru</p>
+            <p>Experience: Fresher</p>
+            <button>Apply Now</button>
+        </div>
+
+        <div class="job-card">
+            <h3>Digital Marketing</h3>
+            <p>Company: GrowthWave</p>
+            <p>Location: Delhi</p>
+            <p>Experience: 1–2 Years</p>
+            <button>Apply Now</button>
+        </div>
+
+        <div class="job-card">
+            <h3>Accounts Assistant</h3>
+            <p>Company: FinEdge Pvt Ltd</p>
+            <p>Location: Mumbai</p>
+            <p>Experience: 0–1 Year</p>
+            <button>Apply Now</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 JobFinder</p>
+    </footer>
+
+</body>
+</html>
