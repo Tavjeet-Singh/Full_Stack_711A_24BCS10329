@@ -2,34 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>JobFinder</title>
+    <title>JOBIFY.in | Job Portal</title>
 
     <style>
-
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
             margin: 0;
-            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
         }
 
         header {
-            background-color: #2d6cdf;
+            background-color: #1f4ed8;
             color: white;
             text-align: center;
-            padding: 20px;
+            padding: 25px;
         }
 
         nav {
-            background-color: #ffffff;
-            padding: 10px;
+            background-color: white;
+            padding: 12px;
             text-align: center;
         }
 
         nav a {
             text-decoration: none;
-            color: #2d6cdf;
-            margin: 10px;
+            color: #1f4ed8;
+            margin: 0 15px;
             font-weight: bold;
         }
 
@@ -37,127 +35,91 @@
             background-color: white;
             margin: 20px;
             padding: 20px;
-            border-radius: 5px;
+            border-radius: 6px;
         }
 
         h2 {
-            color: #2d6cdf;
+            color: #1f4ed8;
         }
 
         input {
             padding: 8px;
             width: 250px;
-            margin-top: 5px;
+            margin: 6px 0;
         }
 
-        input[type="submit"] {
-            background-color: #2d6cdf;
-            color: white;
+        button {
+            padding: 8px 16px;
             border: none;
-            padding: 10px 20px;
+            background-color: green;
+            color: white;
             cursor: pointer;
         }
 
         .job-card {
             border: 1px solid #ccc;
             padding: 15px;
-            margin-bottom: 15px;
+            margin-top: 15px;
             background-color: #fafafa;
+            transition: 0.3s;
         }
 
-        button {
-            background-color: green;
-            color: white;
-            border: none;
-            padding: 8px 15px;
-            cursor: pointer;
+        .job-card:hover {
+            background-color: #e8f0ff;
+        }
+
+        .delete-btn {
+            background-color: red;
+            margin-left: 10px;
         }
 
         footer {
-            background-color: #2d6cdf;
+            background-color: #1f4ed8;
             color: white;
             text-align: center;
             padding: 15px;
+            margin-top: 30px;
         }
-
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>JobFinder</h1>
-        <p>Your trusted job search platform</p>
-    </header>
+<header>
+    <h1>JOBIFY.in</h1>
+    <p>Your trusted job search platform</p>
+    <p>Total Jobs Available: <strong><span id="jobCount">0</span></strong></p>
+</header>
 
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">Jobs</a>
-        <a href="#">Companies</a>
-        <a href="#">Post Resume</a>
-        <a href="#">Login</a>
-    </nav>
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Jobs</a>
+    <a href="#">Companies</a>
+    <a href="#">Post Resume</a>
+    <a href="#">Login</a>
+</nav>
 
-    <section>
-        <h2>Find your dream job</h2>
-        <p>Search thousands of jobs from top companies</p>
+<section>
+    <h2>Add a Job</h2>
 
-        <form>
-            <p>
-                What<br>
-                <input type="text" placeholder="Job title or keyword">
-            </p>
+    <input type="text" id="jobTitle" placeholder="Job Title"><br>
+    <input type="text" id="companyName" placeholder="Company Name"><br>
+    <input type="text" id="jobLocation" placeholder="Location"><br>
 
-            <p>
-                Where<br>
-                <input type="text" placeholder="City or location">
-            </p>
+    <button onclick="addJob()">Add Job</button>
+</section>
 
-            <input type="submit" value="Search Jobs">
-        </form>
-    </section>
+<section id="jobList">
+    <h2>Featured Job Openings</h2>
 
-    <section>
-        <h2>Popular Job Categories</h2>
-        <ul>
-            <li>IT & Software</li>
-            <li>Marketing & Sales</li>
-            <li>Finance & Accounting</li>
-            <li>Human Resources</li>
-            <li>Healthcare</li>
-        </ul>
-    </section>
+    
+</section>
 
-    <section>
-        <h2>Featured Job Openings</h2>
+<footer>
+    <p>© 2026 JOBIFY.in</p>
+    <p>Email: support@jobify.in</p>
+</footer>
 
-        <div class="job-card">
-            <h3>Software Engineer</h3>
-            <p>Company: TechNova Solutions</p>
-            <p>Location: Bengaluru</p>
-            <p>Experience: Fresher</p>
-            <button>Apply Now</button>
-        </div>
-
-        <div class="job-card">
-            <h3>Digital Marketing</h3>
-            <p>Company: GrowthWave</p>
-            <p>Location: Delhi</p>
-            <p>Experience: 1–2 Years</p>
-            <button>Apply Now</button>
-        </div>
-
-        <div class="job-card">
-            <h3>Accounts Assistant</h3>
-            <p>Company: FinEdge Pvt Ltd</p>
-            <p>Location: Mumbai</p>
-            <p>Experience: 0–1 Year</p>
-            <button>Apply Now</button>
-        </div>
-    </section>
-
-    <footer>
-        <p>© 2026 JobFinder</p>
-    </footer>
+<script src="script.js"></script>
 
 </body>
 </html>
