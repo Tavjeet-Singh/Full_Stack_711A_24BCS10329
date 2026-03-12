@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Student Task Manager</h1>
+    <form id="addTask">
+        <input type="text" id="taskInput" placeholder="Enter a task !!" required>
+        <select name="priority" id="priority">
+            <option value="null" selected disabled>Select a priority</option>
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
+        </select>
+        <br><br>
+        <button id="submit" class="submit">Add Task</button>
+    </form>
+    <br>
+    <section>
+        <select name="filter" id="filter">
+            <option value="null" selected disabled>Select a filter</option>
+            <option value="all">All Tasks</option>
+            <option value="completed">Completed</option>
+            <option value="pending">Pending</option>
+        </select>
+    </section>
+    <section>
+        <h2> My Tasks</h2>
+        <ul id="myTasks"></ul>
+    </section>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>

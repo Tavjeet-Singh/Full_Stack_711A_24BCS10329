@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    text-align: center;
+    padding: 50px;
+}
+
+h1{
+    color: white;
+}
+h2{
+    color: white;
+    margin-top: 20px;
+}
+input, select{
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid blue;
+    border-radius: 2px;
+}
+
+.submit{
+    padding: 10px;
+    border: none;
+    background-color:green;
+    color: beige;
+    border-radius: 10px;
+}
+.done{
+    padding: 10px;
+    border: none;
+    background-color:yellow;
+    color: black;
+    border-radius: 10px;
+}
+.delete{
+    padding: 10px;
+    border: none;
+    background-color:red;
+    color: black;
+    border-radius: 10px;
+}
+
+button:hover{
+    transform: scale(1.05);
+}
+
+ul{
+    list-style: none;
+    margin-top: 10px;
+}
+
+li{
+    background: white;;
+    padding: 10px;
+    border-radius: 6px;
+}
